@@ -31,12 +31,12 @@
   </section>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
-		$(document).ready(function(){
-			$(".todo-item").click(function(){
-				alert('clicked');
-				$(this).addClass("completed");
-			});
-		});
+		// $(document).ready(function(){
+		// 	$(".todo-item").click(function(){
+		// 		alert('clicked');
+		// 		$(this).addClass("completed");
+		// 	});
+		// });
 	</script>
   </body>
 </html>
