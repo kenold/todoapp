@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'TodoController@index');
+Route::post('/create/todo', 'TodoController@store');
