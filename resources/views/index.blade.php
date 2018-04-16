@@ -4,7 +4,8 @@
     <div class="columns">
         <div class="column is-three-fifths">
             <div class="todo-form">
-                <form action="" method="POST">
+                <form action="/create/todo" method="POST">
+                    {{ csrf_field() }}
                     <input type="text" class="input is-large" name="name" placeholder="Create a new todo and press ENTER...">
                 </form>                
             </div>                        
