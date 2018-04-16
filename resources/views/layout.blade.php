@@ -24,6 +24,12 @@
 				Create with <span class="has-text-danger">Laravel PHP</span> and <span class="has-text-primary">Bulma</span>!
 			</p>
 			<hr>
+			@if(Session::has('success'))
+				<div class="notification is-success">
+					{{ Session::get('success') }}
+				</div>
+			@endif
+
           	@yield('content')
         </div>
       </div>
