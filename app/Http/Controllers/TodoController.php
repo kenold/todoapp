@@ -36,7 +36,14 @@ class TodoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // create new instance of todo
+        $todo = new Todo;
+
+        // assign new row to new request
+        $todo->name = $request->name;
+        $todo->save();
+
+        return redirect()->back();
     }
 
     /**
