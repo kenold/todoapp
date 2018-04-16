@@ -20,11 +20,11 @@
                 @if($todo->completed)
                     <span class="icon has-text-primary">
                 @else
-                    <span class="icon has-text-grey-light">
+                    <span class="icon has-text-grey-light completed">
                 @endif
                     <a href="{{ route('todo.completed', ['id' => $todo->id]) }}"><i class="fas fa-check-circle"></i></a>
                 </span>
-                {{ $todo->name }}
+                <span class="todo-item">{{ $todo->name }}</span>
                 <hr>
             </li>
         @endforeach
