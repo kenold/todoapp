@@ -7,7 +7,8 @@
       </p>
 
       <ul>
-          
-          <li>Todo Name</li>
+          @foreach($todos as $todo)
+            <li>{{ $todo->name }}</li>
+          @endforeach
       </ul>
 @endsection
