@@ -17,7 +17,7 @@
                             <a href=""><i class="fas fa-edit"></i></a>
                         </span>
                         <span class="icon has-text-danger">
-                            <a href=""><i class="fas fa-trash-alt"></i></a>
+                            <a href="{{ route('todo.delete', ['id' => $todo->id]) }}"><i class="fas fa-trash-alt"></i></a>
                         </span>
                         <span class="icon has-text-primary">
                             <a href=""><i class="fas fa-check-circle"></i></a>
