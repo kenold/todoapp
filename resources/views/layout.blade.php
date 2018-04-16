@@ -15,14 +15,15 @@
   <body>
   <section class="section">
     <div class="container">
-      <h1 class="title">ToDo App 1.0</h1>
-      <p class="subtitle">
-        Create with <span class="has-text-danger">Laravel PHP</span> and <span class="has-text-primary">Bulma</span>!
-      </p>
-      <hr>
+      
       <div class="columns">
         <div class="column is-three-fifths">
-          @yield('content')
+			<h1 class="title">ToDo App 1.0</h1>
+			<p class="subtitle">
+				Create with <span class="has-text-danger">Laravel PHP</span> and <span class="has-text-primary">Bulma</span>!
+			</p>
+			<hr>
+          	@yield('content')
         </div>
       </div>
     </div>
