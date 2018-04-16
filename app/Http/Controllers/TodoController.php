@@ -108,7 +108,7 @@ class TodoController extends Controller
     {
         $todo = Todo::find($id);
 
-        $todo->completed = 1;
+        $todo->completed = !$todo->completed;
 
         $todo->save();
 
