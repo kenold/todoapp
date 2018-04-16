@@ -1,14 +1,21 @@
 @extends('layout')
 
-@section('content')
-    <h1 class="title">ToDo App 1.0</h1>
-      <p class="subtitle">
-        Create with <span class="has-text-danger">Laravel PHP</span> and <span class="has-text-primary">Bulma</span>!
-      </p>
-
-      <ul>
-          @foreach($todos as $todo)
-            <li>{{ $todo->name }}</li>
-          @endforeach
-      </ul>
+@section('content')    
+    <ul>
+        @foreach($todos as $todo)
+            <li>
+                <span class="icon has-text-info">
+                    <a href=""><i class="fas fa-edit"></i></a>
+                </span>
+                <span class="icon has-text-danger">
+                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                </span>
+                <span class="icon has-text-primary">
+                    <a href=""><i class="fas fa-check-circle"></i></a>
+                </span>
+                {{ $todo->name }}
+                <hr>
+            </li>
+        @endforeach
+    </ul>
 @endsection
