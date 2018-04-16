@@ -11,6 +11,6 @@ class TodosTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory('App\Todo', 10)->create();
     }
 }
