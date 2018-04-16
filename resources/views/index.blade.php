@@ -1,10 +1,8 @@
 @extends('layout')
 
 @section('content')
-    <h1 class="title">
-        Hello World
-      </h1>
+    <h1 class="title">ToDo App 1.0</h1>
       <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        Create with <strong>Laravel PHP</strong> and <strong>Bulma</strong>!
       </p>
 @endsection
