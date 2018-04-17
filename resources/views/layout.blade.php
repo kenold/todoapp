@@ -37,12 +37,13 @@
   </section>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
-		// $(document).ready(function(){
+		$(document).ready(function(){
+			$('.notification').delay(3000).fadeOut(1000);
 		// 	$(".todo-item").click(function(){
 		// 		alert('clicked');
 		// 		$(this).addClass("completed");
 		// 	});
-		// });
+		});
 	</script>
   </body>
 </html>
