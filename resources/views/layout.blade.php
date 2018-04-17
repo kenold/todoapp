@@ -8,6 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <style>
       a { color: inherit; }
+      .name { color: normal; }
       hr { margin: 0.6rem 0; }
       .todo-form { margin-bottom: 2rem; }
 	  .completed {text-decoration: line-through; }
@@ -32,6 +33,10 @@
 
           	@yield('content')
         </div>
+      </div>
+
+      <div class="footer">        
+        &copy;{{ date('Y') }} <a href="https://twitter.com/kenoldb"><span class="has-text-primary">Kenold Beauplan</span></a>. All rights reserved.
       </div>
     </div>
   </section>
